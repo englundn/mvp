@@ -1,0 +1,24 @@
+{
+  "name": "2016-09-mvp",
+  "version": "1.0.0",
+  "description": "State Capital Quiz Game",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/englundn/2016-09-mvp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/englundn/2016-09-mvp/issues"
+  },
+  "homepage": "https://github.com/englundn/2016-09-mvp#readme"
+}

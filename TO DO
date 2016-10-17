@@ -1,0 +1,17 @@
+TO DO
+
+Front end:
+Make website that renders dummy data.
+Make elements interactive with Angular.
+Track player score.
+Query for state images.
+Add multiple play methods.
+
+Back end:
+Users make account.
+User login.
+Store user info and scores in a database.
+Users can log out.
+
+Later stuff:
+Add the option to test country capitals.
