@@ -1,11 +1,12 @@
 TO DO
 
-First steps:
-Build questions
-Build answers
-Display both with app.js
-  -Use nested states
-  https://github.com/angular-ui/ui-router/wiki/Nested-States-and-Nested-Views#nested-states--views
+Next steps:
+Randomly choose state from JSON file, assign to $scope.
+Randomly choose answers.
+Give the answers click functionality.
+Track whether answer is right or wrong.
+Update scorebar accordingly. 
+
 
 Front end:
 Make website that renders dummy data.
