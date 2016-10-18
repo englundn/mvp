@@ -1,7 +1,7 @@
 <div id='answers' np-controller='AnswersController'>
   <ul>
-    <li>{{answers[0]}}</li>
-    <li>{{answers[1]}}</li>
-    <li>{{answers[2]}}</li>
+    <li ng-repeat='answer in answers'>
+      <a ng-click='checkAnswer(answer)'>{{answer}}</a>
+    </li>
   </ul>
 </div>
