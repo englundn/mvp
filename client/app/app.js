@@ -25,7 +25,4 @@ angular.module('sttqz', [
   });
 
   $urlRouterProvider.otherwise('/');
-})
-;
-
-//add .run method if necessary
+});

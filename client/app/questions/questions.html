@@ -1,6 +1,6 @@
 <div id='questions' np-controller='QuestionsController'>
   <div>What is the capital of {{stateName}}?</div>
-  <span ng-repeat='url in imageUrls'>
+  <span class='images' ng-repeat='url in imageUrls'>
     <img src=https://{{url}}>
   </span>
   <div ui-view></div>

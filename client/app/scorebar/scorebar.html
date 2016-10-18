@@ -1,5 +1,7 @@
-<div id='scorebar' np-controller='ScorebarController'>
-  <div>Current Score: {{currentScore}}</div>
-  <div>High Score: {{highScore}}</div>
+<div np-controller='ScorebarController'>
+  <div class='scorebar'>
+    <span>Current Score: {{currentScore}}</span>
+    <span>High Score: {{highScore}}</span>
+  </div>
   <div ui-view></div>
 </div>
