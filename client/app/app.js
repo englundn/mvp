@@ -19,12 +19,12 @@ angular.module('sttqz', [
   })
   //route for answer
   .state('scorebar.question.answer', {
-    url: '/',  
+    url: '/state/:state',  
     templateUrl: 'app/answers/answers.html',
     controller: 'AnswersController'  
   });
 
-  $urlRouterProvider.otherwise('/');
+  // $urlRouterProvider.otherwise('/');
 })
 ;
 

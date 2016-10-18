@@ -1,9 +1,13 @@
 var imageFetcher = require('./imageFetcher.js');
 
+var path = require('path');
 var request = require('request');
 
 module.exports = function(app, express) {
-  app.get('/:state', function(req, res) {
+  // app.get('*', function(req, res) {
+  //   res.sendFile(path.resolve(__dirname + '/../client/index.html'));
+  // });
+  app.get('/api/:state', function(req, res) {
     var state = req.params.state;
     request('https://en.wikipedia.org/wiki/' + req.params.state, function(err, res2, html) {
       //https://www.google.com/search?tbm=isch&q=
@@ -14,7 +18,7 @@ module.exports = function(app, express) {
         return snippet.split(' ')[0];
       });
       console.log(cleanHtml.length);
-      res.send('<img src=' + cleanHtml[22] + '>');
+      res.send(cleanHtml[32]);
     });
   });
 

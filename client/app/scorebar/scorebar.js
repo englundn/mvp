@@ -1,6 +1,4 @@
-angular.module('sttqz.scorebar', [
-  'sttqz.answers'
-])
+angular.module('sttqz.scorebar', ['sttqz.answers'])
 
 .controller('ScorebarController', function($scope) {
 
