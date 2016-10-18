@@ -8,6 +8,18 @@ angular.module('sttqz.services', [])
     stateImage: ''
   };
 })
+.factory('GetImages', function($http) {
+  return function(stateName) {
+    return $http.get('/api/' + stateName)
+      .then(function(links) {
+        return links.data.filter(function(url) {
+          return url.indexOf('.png') === -1;
+        });
+      }, function(err) {
+        console.error(err);
+      });
+  };
+})
 // .factory('AnswerResponse', function($scope) {
 //   return {
 //     correctAnswer: function() {

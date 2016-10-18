@@ -1,4 +1,3 @@
-var imageFetcher = require('./imageFetcher.js');
 
 var path = require('path');
 var request = require('request');
@@ -8,6 +7,7 @@ module.exports = function(app, express) {
   //   res.sendFile(path.resolve(__dirname + '/../client/index.html'));
   // });
   app.get('/api/:state', function(req, res) {
+    console.log('in routes');
     var state = req.params.state;
     request('https://en.wikipedia.org/wiki/' + req.params.state, function(err, res2, html) {
       //https://www.google.com/search?tbm=isch&q=
@@ -17,8 +17,8 @@ module.exports = function(app, express) {
       cleanHtml = cleanHtml.map(function(snippet) {
         return snippet.split(' ')[0];
       });
-      console.log(cleanHtml.length);
-      res.send(cleanHtml[32]);
+      // console.log(cleanHtml.length);
+      res.send(cleanHtml);
     });
   });
 
