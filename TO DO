@@ -1,11 +1,6 @@
 TO DO
 
 Next steps:
-Randomly choose state from JSON file, assign to $scope.
-Randomly choose answers.
-Give the answers click functionality.
-Track whether answer is right or wrong.
-Update scorebar accordingly. 
 
 
 Front end:
