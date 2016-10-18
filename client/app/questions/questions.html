@@ -1,7 +1,10 @@
 <div id='questions' np-controller='QuestionsController'>
-  <div>What is the capital of {{stateName}}?</div>
-  <span class='images' ng-repeat='url in imageUrls'>
-    <img src=https://{{url}}>
-  </span>
+  <div id='question'>What is the capital of {{stateName}}?</div>
+  <div class='images'>
+    <span ng-repeat='url in imageUrls'>
+      <img src=https://{{url}}>
+    </span>
+  </div>
+  <div class='response' ng-show='answered'>{{correctAnswer ? 'Correct!' : 'Sorry, the answer was ' + rightCapital + '.'}}</div>
   <div ui-view></div>
 </div>

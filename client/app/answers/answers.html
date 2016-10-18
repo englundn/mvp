@@ -1,7 +1,9 @@
-<div id='answers' np-controller='AnswersController'>
-  <ul>
-    <li ng-repeat='answer in answers'>
-      <a ng-click='checkAnswer(answer)'>{{answer}}</a>
-    </li>
-  </ul>
+<div class='answers' np-controller='AnswersController'>
+  <div>
+    <ul>
+      <li ng-repeat='answer in answers'>
+        <a ng-click='checkAnswer(answer)'>{{answer}}</a>
+      </li>
+    </ul>
+  </div>
 </div>
