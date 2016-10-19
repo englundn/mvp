@@ -4,7 +4,7 @@ angular.module('sttqz.answers', [])
 
   //Generate random numbers that correspond to states
   var answerNums = [$scope.stateNumber];
-  while (answerNums.length < 3) {
+  while (answerNums.length < 4) {
     var num = Math.floor(Math.random() * 50);
     if (answerNums.indexOf(num) === -1) {
       answerNums.push(num);
@@ -23,7 +23,7 @@ angular.module('sttqz.answers', [])
       $scope.$emit('checkAnswer', false);
     }
     var answerNums = [$scope.stateNumber];
-    while (answerNums.length < 3) {
+    while (answerNums.length < 4) {
       var num = Math.floor(Math.random() * 50);
       if (answerNums.indexOf(num) === -1) {
         answerNums.push(num);
