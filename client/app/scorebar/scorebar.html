@@ -2,6 +2,10 @@
   <div class='scorebar'>
     <span>Current Score: {{currentScore}}</span>
     <span>High Score: {{highScore}}</span>
+    <form>
+      <input type='text' ng-model='user.username' placeholder='Username'>
+      <input type='text' ng-model='user.password' placeholder='Password'>
+    </form>
     </div>
   <div ui-view></div>
 </div>
