@@ -1,7 +1,7 @@
 angular.module('sttqz.questions', [])
 
 .controller('QuestionsController', function($scope, $location, GetImages) {
-  $scope.stateNumber = Math.floor(Math.random() * 50);
+  $scope.stateNumber = Math.floor(Math.random() * stateData.length);
   $scope.stateName = stateData[$scope.stateNumber].name;
   $location.path('/').search({state: $scope.stateName});
 

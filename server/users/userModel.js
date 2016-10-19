@@ -25,6 +25,7 @@ var createUser = Promise.promisify(User.create, User);
 
 module.exports = {
   signin: function (req, res) {
+    console.log(req.body);
     var username = req.body.username;
     var password = req.body.password;
 
@@ -40,7 +41,7 @@ module.exports = {
       }
     });
   },
-  signup: function (req, res, next) {
+  signup: function (req, res) {
     var username = req.body.username;
     var password = req.body.password;
     findUser({username: username}).then(function(user) {

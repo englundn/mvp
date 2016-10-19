@@ -1,11 +1,11 @@
 
 var path = require('path');
 var request = require('request');
-var userController = require('./users/userModel');
+var userModel = require('./users/userModel');
 
 module.exports = function(app, express) {
-  app.post('/api/signin', userController.signin);
-  app.post('/api/signup', userController.signup);
+  app.post('/api/signin', userModel.signin);
+  app.post('/api/signup', userModel.signup);
   app.get('/api/:state', function(req, res) {
     var state = req.params.state;
     request('https://en.wikipedia.org/wiki/' + req.params.state, function(err, res2, html) {
